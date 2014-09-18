@@ -1,4 +1,6 @@
-natural-language-account-creation
-=================================
+Created by Codrops
 
-An account creation form modeled after Codrops Natural Language form
+http://www.codrops.com
+
+Please read about our license: http://tympanus.net/codrops/licensing/
+

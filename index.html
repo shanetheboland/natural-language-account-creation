@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Language Form</title>
+    <meta name="description" content="Natural Language Form with custom text input and drop-down lists" />
+    <meta name="keywords" content="Natural Language UI, sentence form, text input, contenteditable, html5, css3, jquery" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container demo-1">
+        <header>
+            <h1>Welcome to Flitti
+                <span>We help people be the best person they can be, by turning their life into a game.</span>
+            </h1>
+            <div class="ready-to-play">
+                <h2>Are you ready to play?</h2>
+                <a class="button yes" id="button-yes">Yeah!</a>
+                <a class="button no" id="button-no">No, I don't like fun.</a>
+                <div class="post-container">
+                    <p id="play-no" class="hide">We are very sorry, but you can't join Flitti if you don't like having fun.
+                        <br/>
+                        <br/>It's just not going to work out. It's not you. It's us.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <div id="play-yes" class="hide main clearfix">
+            <form id="nl-form" class="nl-form">
+
+                <div id="section-1">
+                    Hi! My name is
+                    <input type="text" name="first_name" id="first_name" value="" placeholder="Nick" />
+                    <input type="text" name="last_name" class="last_name" id="last_name" value="" placeholder="Cooper" />
+                </div>
+
+                <div id="section-2" class="clear">
+                    and I'm a
+                    <select id="gender">
+                        <option id="boy" value="1" selected>Boy</option>
+                        <option id="girl" value="2">Girl</option>
+                    </select>.
+                </div>
+
+                <div id="section-3" class="clear">
+                    My email is
+                    <input type="email" name="email" id="email" value="" placeholder="you@that.com" />.
+                </div>
+
+                <div id="section-4" class="clear">
+                    I want my username to be
+                    <input type="text" name="username" id="username" value="" placeholder="username" />.
+                </div>
+
+                <div id="section-5" class="clear">
+                    I live in
+                    <input type="text" name="location" id="location" value="" placeholder="Troy, NY" />.
+                </div>
+
+                <div id="section-6" class="clear">
+                    I think I want my password to be
+                    <input type="text" name="password" id="password" value="" placeholder="password" />.
+                </div>
+
+                <div id="section-7" class="clear">
+                    Yup! I definitely want my password to be
+                    <input type="text" name="confirm_password" id="confirm_password" value="" placeholder="password" />.
+                </div>
+
+                <div id="section-8" class="clear">
+                    <div class="nl-submit-wrap">
+                        <button class="nl-submit" type="submit">Begin!</button>
+                    </div>
+                </div>
+                <div class="nl-overlay"></div>
+            </form>
+        </div>
+    </div>
+    <!-- /container -->
+    <script src="js/nlform.js"></script>
+    <script>
+    var nlform = new NLForm(document.getElementById('nl-form'));
+    </script>
+</body>
+
+</html>
