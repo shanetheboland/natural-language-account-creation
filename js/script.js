@@ -40,5 +40,19 @@ $(document).ready(function() {
     $("#section-7 input:last-of-type").change(function() {
         $("#section-8").css("opacity", "1.0");
     });
+});
 
+
+$(document).ready(function() {
+    $('html').click(function() {
+        $('.nl-field-open ul').hide("slow");
+    });
+
+    $('.nl-field').click(function(event) {
+        event.stopPropagation();
+    });
+
+    $('.nl-field-toggle').click(function(event) { 
+        $(this).next().show("slow");
+    });
 });
